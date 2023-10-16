@@ -1,0 +1,40 @@
+doctype html
+html(ng-app='myntra')
+html
+  head
+    meta(name='Viewport', content='width=device-width',intial-scale=1.0)
+
+    title= title
+  
+    link(rel='stylesheet',href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') schemes
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li 
+              a(href='/menu') Menu
+            li 
+              a(href='/aboutus') About us
+            li 
+              a(href='/contact') Contact
+            li 
+              a(href='/reservation') Reservation
+    .container
+      block content
+      footer
+        .row
+          .col-xs-12
+            small &copy; governmentschemes
+  script(src='/javascripts/jquery-1.11.1.min.js')
+  script(src='/javascripts/jquery-1.11.1.min.js')
+  script(src='/angular/angular.min.js')
+  script(src='/angular/loc8rApp.js')

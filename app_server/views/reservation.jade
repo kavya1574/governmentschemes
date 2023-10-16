@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    section.reservation
+      h1 Reserve a Page
+      p To make a reservation, please provide the following details. Our team will get back to you to confirm your reservation.
+      form(action="/reservation", method="post")
+        div.form-group
+          label(for="name") Name:
+          input#name.form-control(type="text", name="name", required)
+        div.form-group
+          label(for="email") Email:
+          input#email.form-control(type="email", name="email", required)
+        div.form-group
+          label(for="phone") Phone:
+          input#phone.form-control(type="tel", name="phone", required)
+         Reserve to page
